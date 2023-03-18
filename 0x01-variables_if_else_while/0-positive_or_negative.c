@@ -5,7 +5,7 @@
 /**
  * main - Entry point
  *
- * This program generates a random integer and prints whether it is positive,
+ * This program generates a random integer between -99 and 99 and prints whether it is positive,
  * negative or zero.
  *
  * Return: Always 0 (success)
@@ -13,24 +13,20 @@
 int main(void)
 {
     int n;
-
     srand(time(NULL));
-    n = rand() % (RAND_MAX / 2 + 1) - RAND_MAX / 2;
-
-    printf("%d\n", n);
-
+    n = rand() % 199 - 99;
+    printf("%02d ", n);
     if (n > 0)
     {
-        printf("%d is positive\n", n);
+        printf("is positive\n");
     }
-    else if (n < 0)
+    else if (n == 0)
     {
-        printf("%d is negative\n", n);
+        printf("is zero\n");
     }
     else
     {
-        printf("%d is zero\n", n);
+        printf("is negative\n");
     }
-
     return (0);
 }
