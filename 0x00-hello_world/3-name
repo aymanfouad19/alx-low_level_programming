@@ -1,2 +1,2 @@
-CFILE="your_c_file.c"
+#!/bin/bash
 gcc -o cisfun $CFILE
