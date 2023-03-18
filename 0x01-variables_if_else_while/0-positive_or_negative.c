@@ -2,9 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main() {
+int main(void) {
+    int n;
     srand(time(NULL));
-    int n = rand() % RAND_MAX - RAND_MAX / 2;
+    n = rand() % RAND_MAX - RAND_MAX / 2;
     printf("%d\n", n);
     
     if (n > 0) {
