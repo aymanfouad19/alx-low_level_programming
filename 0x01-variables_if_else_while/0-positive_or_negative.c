@@ -4,8 +4,6 @@
 /**
  * main - Entry point
  *
- * This program generates a random integer and prints whether it is positive, negative or zero.
- *
  * Return: Always 0 (success)
  */
 int main(void)
