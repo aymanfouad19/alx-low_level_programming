@@ -19,5 +19,5 @@ if (num > 0 && !(*s >= '0' && *s <= '9'))
 break;
 s++;
 }
-return (num * sign);
+return (num *sign);
 }
