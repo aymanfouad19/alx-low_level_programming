@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+/* function prototypes */
 char *_strcat(char *dest, char *src);
 char *_strncat(char *dest, char *src, int n);
 char *_strncpy(char *dest, char *src, int n);
@@ -9,4 +10,5 @@ char *string_toupper(char *);
 char *cap_string(char *);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
+char *_strstr(char *haystack, char *needle);
 #endif /* MAIN_H */
